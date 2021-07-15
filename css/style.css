@@ -13,7 +13,7 @@ header {
 
 nav {
     background-color: silver;
-    height: 50px;
+    height: 25px;
     width: 960px;
 }
 
@@ -32,20 +32,21 @@ footer {
 li {
     display: inline-block;
     background-color: silver;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 ul {
     background-color: silver;
     width: 500px;
+    margin-right: 0px;
+    display: inline;
 }
-
-
 
 a {
     background-color: silver;
     text-decoration: none;
     color: black;
+    /* text-align:center; */
 }
 
 img {
@@ -62,19 +63,44 @@ article {
     align-content: stretch;
 }
 
+article ol {
+    background-color: beige;
+    list-style: georgian;
+}
+
+article li {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 11px;
+    background-color: beige;
+    display: block;
+    font-style: italic;
+}
+
 h1 {
     background-color: silver;
     margin-bottom: 25px;
-    font-size: 200px;
+    font-size: 30px;
     font-style: italic;
+}
+
+h3 {
+    text-align: left;
+    text-decoration: underline;
 }
 
 p {
     width: auto;
     margin-top: 15px;
     font-size: 12px;
+    text-align: left;
 }
 
 footer li {
     margin-top: 15px;
+}
+
+span {
+    text-decoration: underline;
+    font-weight: bold;
 }
