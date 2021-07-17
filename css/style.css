@@ -5,14 +5,21 @@
 }
 
 header {
-    background-color: silver;
+    background-color: rgb(142,169,219);
     margin: 0px 0px 10px;
     height: 100px;
     width: 960px;
 }
 
+header img {
+    height: 95px;
+    border-radius: 15px 70px 70px 15px;
+    border-style:groove;
+    margin-left:30px;
+}
+
 nav {
-    background-color: silver;
+    background-color:  rgb(142,169,219);
     height: 25px;
     width: 960px;
 }
@@ -22,7 +29,7 @@ main {
 }
 
 footer {
-    background-color: silver;
+    background-color:  rgb(142,169,219);
     height: 50px;
     margin-top: 10px;
     width: 960px;
@@ -31,19 +38,19 @@ footer {
 
 li {
     display: inline-block;
-    background-color: silver;
+    background-color:  rgb(142,169,219);
     margin-left: 40px;
 }
 
 ul {
-    background-color: silver;
+    background-color:  rgb(142,169,219);
     width: 500px;
     margin-right: 0px;
     display: inline;
 }
 
 a {
-    background-color: silver;
+    background-color:  rgb(142,169,219);
     text-decoration: none;
     color: black;
     /* text-align:center; */
@@ -53,14 +60,16 @@ img {
     height: 200px;
     border-radius: 10px;
     float: left;
-    margin: 0px 10px 0px 30px;
+    margin: 0px 10px 0px 0px;
 }
 
 article {
-    height: 220px;
+    height: auto;
     width: auto;
     text-align: middle;
     align-content: stretch;
+    margin-bottom: 20px;
+    margin-left:30px
 }
 
 article ol {
@@ -78,7 +87,7 @@ article li {
 }
 
 h1 {
-    background-color: silver;
+    background-color: rgb(142,169,219);
     margin-bottom: 25px;
     font-size: 30px;
     font-style: italic;
@@ -87,6 +96,8 @@ h1 {
 h3 {
     text-align: left;
     text-decoration: underline;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 p {
@@ -103,4 +114,19 @@ footer li {
 span {
     text-decoration: underline;
     font-weight: bold;
+}
+
+ol li{
+    margin:0px;
+    padding:5px;
+    list-style-type:georgian;
+}
+ol li a {
+    background-color: beige;
+    margin:0px;
+    font-size:10px;
+}
+
+ol{
+    margin:5px;
 }

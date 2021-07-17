@@ -68,7 +68,7 @@ if (presentAsk === 'no' || presentAsk === 'n') {
 
 let whyAsk = prompt('Have I climbed the Tooth of Time?').toLowerCase()
 
-if (whyAsk === 'yes' || whyASk === 'y') {
+if (whyAsk === 'yes' || whyAsk === 'y') {
     // console.log('user answer for why: ' + whyAsk);
     alert('Aced it');
 } else if (whyAsk === 'no' || whyAsk === 'n') {
@@ -79,8 +79,46 @@ if (whyAsk === 'yes' || whyASk === 'y') {
     alert('Ding, ding, ding. It\'s only yes or no.');
 }
 
-function viewerName(userName){
-    return document.write(userName +' ');
+let guessNumber = prompt('Guess a number between 1 and 10')
+
+
+for (let i = 0; i < 3; i++) {
+    if (guessNumber === '7') {
+        alert('Hit the nail on the head.');
+        i = 5;
+        // setting i = 5 ends the loop
+    } else if (guessNumber === '6' || guessNumber === '8') {
+        alert('Super Hot!!!!');
+        guessNumber = prompt('Guess a number between 1 and 10');
+    } else if (guessNumber === '5' || guessNumber === '9') {
+        alert('Warmer');
+        guessNumber = prompt('Guess a number between 1 and 10');
+    } else if (guessNumber === '4' || guessNumber === '10') {
+        alert('Warm');
+        guessNumber = prompt('Guess a number between 1 and 10');
+    } else {
+        (guessNumber === '3' || guessNumber === '2' || guessNumber === '1')
+        alert('Cold as ice.');
+        guessNumber = prompt('Guess a number between 1 and 10');
+    }
+
+}
+// once loop completes runs if statement
+if (guessNumber != '7') {
+    alert('The correct answer is 7')
 }
 
-viewerName();
+// question seven is not complete. arrays argh.
+
+let sevenQuest = prompt('What state(s) have I lived in for longer than a month continuously?').toLowerCase();
+sevenAnswer = ['california', 'texas', 'alabama','arizona','washington','ca','tx','al','az','wa'];
+
+for (let ii = 0; ii < 5; ii++) {
+    if (sevenQuest = sevenAnswer) {
+        alert('Fun times');
+        i = 6;
+    } else {
+        alert('guess again');
+        sevenAnswer = prompt('Guess again.');
+    }
+}
