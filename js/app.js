@@ -1,12 +1,15 @@
 'use strict'
 
 // Prompting User for their name
+function  firstGreet() {
 let userName = prompt('Hello, what's your name?'');
 // console.log(userName);
 
 // Greeting user with alert message after prompting them
 alert(`Hello ${userName}. Welcome to the Thunder Dome.`);
  let correctAnswer = 0;
+}
+firstGreet();
 
 // Let the quiz begin through prompt that require yes or no answers
 
