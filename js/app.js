@@ -67,6 +67,7 @@ if (futureAsk === 'yes' || futureAsk === 'y') {
 }
 questionThree();
 
+function questionFour() {
 let presentAsk = prompt('Is my dog is a pomeranian?').toLowerCase();
 
 if (presentAsk === 'no' || presentAsk === 'n') {
@@ -80,7 +81,8 @@ if (presentAsk === 'no' || presentAsk === 'n') {
     // console.log('user answer for present: ' + presentAsk);
     alert('LOL, just answer yes or no. Thank you for your cooperation.');
 }
-
+}
+questionFour();
 let whyAsk = prompt('Have I climbed the Tooth of Time?').toLowerCase()
 
 if (whyAsk === 'yes' || whyAsk === 'y') {
