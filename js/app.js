@@ -1,5 +1,6 @@
 'use strict'
 let correctAnswer = '';
+let userName = '';
 // Prompting User for their name
 function firstGreet() {
     let userName = prompt('Hello, what\'s your name?');
@@ -143,6 +144,7 @@ questionSix();
 // Display all the possible correct answers to the user.
 // Consider using a loop of some sort for this question.
 
+function questionSeven() {
 let sevenQuest = prompt('What state(s) have I lived in for longer than a month continuously?').toLowerCase();
 let sevenAnswer = ['california', 'texas', 'alabama', 'arizona', 'washington', 'ca', 'tx', 'al', 'az', 'wa'];
 let guessCorrectly = false;
@@ -167,9 +169,12 @@ while (attempts) {
     }
     attempts--
 }
+}
+questionSeven();
 
 console.log(`Your correct answer count is ${correctAnswer}.`);
 
 let score = (correctAnswer/7)*100;
 
 alert(`Congrats, ${userName} you scored ${score.toFixed(2)}% correct.`);
+
