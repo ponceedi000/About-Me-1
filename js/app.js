@@ -1,13 +1,13 @@
 'use strict'
-
+let correctAnswer = '';
 // Prompting User for their name
-function  firstGreet() {
-let userName = prompt('Hello, what's your name?'');
-// console.log(userName);
+function firstGreet() {
+    let userName = prompt('Hello, what\'s your name?');
+    // console.log(userName);
 
-// Greeting user with alert message after prompting them
-alert(`Hello ${userName}. Welcome to the Thunder Dome.`);
- let correctAnswer = 0;
+    // Greeting user with alert message after prompting them
+    alert(`Hello ${userName}. Welcome to the Thunder Dome.`);
+    let correctAnswer = 0;
 }
 firstGreet();
 
@@ -32,6 +32,8 @@ if (colorAsk === 'yes' || colorAsk === 'y') {
 }
 }
 questionOne();
+
+function questionTwo() {
 let pastAsk = prompt('Did I fly helicopters for the military??').toLowerCase();
 
 if (pastAsk === 'yes' || pastAsk === 'y') {
@@ -45,6 +47,8 @@ if (pastAsk === 'yes' || pastAsk === 'y') {
     // console.log('user answer for past: ' + pastAsk);
     alert('Again? Please answer yes or no. Thank you for your cooperation.');
 }
+}
+questionTwo();
 
 let futureAsk = prompt('Am I software developer?').toLowerCase();
 
@@ -85,7 +89,7 @@ if (whyAsk === 'yes' || whyAsk === 'y') {
     alert('Try again. Better luck next time');
 } else {
     // console.log('user answer for why: ' + whyAsk);
-    alert('Ding, ding, ding. It\'s only yes or no.'');
+    alert('Ding, ding, ding. It\'s only yes or no.');
 }
 
 let guessNumber = prompt('Guess a number between 1 and 10.');
