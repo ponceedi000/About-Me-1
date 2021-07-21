@@ -50,6 +50,7 @@ if (pastAsk === 'yes' || pastAsk === 'y') {
 }
 questionTwo();
 
+function questionThree() {
 let futureAsk = prompt('Am I software developer?').toLowerCase();
 
 if (futureAsk === 'yes' || futureAsk === 'y') {
@@ -63,6 +64,8 @@ if (futureAsk === 'yes' || futureAsk === 'y') {
     // console.log('user answer for future: ' + futureAsk);
     alert('Seriously? Now your just doing it to be funny.')
 }
+}
+questionThree();
 
 let presentAsk = prompt('Is my dog is a pomeranian?').toLowerCase();
 
