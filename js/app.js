@@ -83,6 +83,8 @@ if (presentAsk === 'no' || presentAsk === 'n') {
 }
 }
 questionFour();
+
+function questionFive() {
 let whyAsk = prompt('Have I climbed the Tooth of Time?').toLowerCase()
 
 if (whyAsk === 'yes' || whyAsk === 'y') {
@@ -96,7 +98,8 @@ if (whyAsk === 'yes' || whyAsk === 'y') {
     // console.log('user answer for why: ' + whyAsk);
     alert('Ding, ding, ding. It\'s only yes or no.');
 }
-
+}
+questionFive();
 let guessNumber = prompt('Guess a number between 1 and 10.');
 
 
