@@ -100,6 +100,8 @@ if (whyAsk === 'yes' || whyAsk === 'y') {
 }
 }
 questionFive();
+
+function questionSix() {
 let guessNumber = prompt('Guess a number between 1 and 10.');
 
 
@@ -129,7 +131,8 @@ for (let i = 0; i < 3; i++) {
 if (guessNumber != '7') {
     alert('The correct answer is 7')
 }
-
+}
+questionSix();
 // question seven is not complete. arrays argh.
 
 
