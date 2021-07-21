@@ -14,7 +14,7 @@ firstGreet();
 // Let the quiz begin through prompt that require yes or no answers
 
 // asking my favorite color
-
+function questionOne() {
 let colorAsk = prompt('Is my favorite color blue??').toLowerCase();
 
 // if code to verify correct answer
@@ -30,7 +30,8 @@ if (colorAsk === 'yes' || colorAsk === 'y') {
     // console.log('user answer for color is: ' + colorAsk);
     alert('Please answer yes or no. Thank you for your cooperation.')
 }
-
+}
+questionOne();
 let pastAsk = prompt('Did I fly helicopters for the military??').toLowerCase();
 
 if (pastAsk === 'yes' || pastAsk === 'y') {
